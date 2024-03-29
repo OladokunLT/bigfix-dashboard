@@ -13,7 +13,7 @@ const Sidebar = () => {
   };
   return (
     <>
-      <nav className={` bg-blue-900 h-screen w-[240px]`}>
+      <nav className={` bg-blue-900 h-screen w-[240px] fixed pt-[152px]`}>
         <ul>
           <li>
             <NavLink
