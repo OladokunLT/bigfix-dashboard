@@ -2,18 +2,14 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
-  const className = {
-    position: "absolute",
-    width: "240px",
-    height: "1024px",
-    left: "0px",
-    top: "0px",
-
-    background: "linear-gradient(180deg, #09285D 0%, #020A17 100%)",
-  };
   return (
     <>
-      <nav className={` bg-blue-900 h-screen w-[240px] fixed pt-[152px]`}>
+      <nav
+        className={` h-screen hidden md:block w-[240px] absolute md:fixed pt-[152px]`}
+        style={{
+          background: "linear-gradient(180deg, #09285D 0%, #020A17 100%)",
+        }}
+      >
         <ul>
           <li>
             <NavLink
