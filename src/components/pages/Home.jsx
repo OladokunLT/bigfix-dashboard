@@ -2,10 +2,12 @@ import CardOverview from "../utilities/CardOverview";
 import tradeUp from "../images/trade-up.png";
 import tradeDown from "../images/trade-down.png";
 import LatestActivities from "../latestActivities/LatestActivities";
+import Employees from "../employees/Employees";
+
 const Home = () => {
   return (
     <>
-      <div className="flex flex-col md:flex-row gap-10">
+      <div className="flex flex-col xl:flex-row gap-10">
         <div className="col-1 ">
           {/* Overview secttion*/}
           <div className=" md:flex gap-[24px]">
@@ -72,7 +74,9 @@ const Home = () => {
         </div>
 
         {/* col-2 */}
-        <div className="col-2"></div>
+        <div className="col-2 flex-1">
+          <Employees />
+        </div>
       </div>
     </>
   );

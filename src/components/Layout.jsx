@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 const Layout = () => {
   return (
     <>
-      <div className="flex w-full h-[800px] font-sans max-w-[1440px] mx-auto">
+      <div className="flex  h-[800px] font-sans max-w-[1440px] mx-auto">
         <Sidebar />
         <div className="w-full mx-10">
           <Header />
