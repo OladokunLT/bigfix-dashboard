@@ -8,7 +8,7 @@ import Contacts from "../contacts/Contacts";
 const Home = () => {
   return (
     <>
-      <div className="flex flex-col xl:flex-row gap-x-10">
+      <div className="flex flex-col xl:flex-row gap-x-10 pb-10">
         <div className="col-1 ">
           {/* Overview secttion*/}
           <div className="flex flex-wrap gap-[24px]">
