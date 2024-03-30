@@ -11,8 +11,8 @@ const LatestActivities = () => {
         Latest activities
       </h3>
       <div className="flex flex-col gap-6">
-        <div className="flex gap-6 h-12 md:h-16 items-center border border-[#E2E6E9] rounded bg-white px-4 md:px-6">
-          <span className="">
+        <div className="flex gap-6 py-[16px] lg-[24px] items-center border border-[#E2E6E9] rounded bg-white px-4 md:px-6">
+          <span className="min-w-6 min-h-6">
             <img src={blueBall} alt="" />
           </span>
           <p className=" text-[#596773]">
@@ -21,8 +21,8 @@ const LatestActivities = () => {
             INV001.
           </p>
         </div>
-        <div className="flex gap-6 h-12 md:h-16 items-center border border-[#E2E6E9] rounded bg-white px-4 md:px-6">
-          <span className="">
+        <div className="flex gap-6 py-[16px] lg-[24px] items-center border border-[#E2E6E9] rounded bg-white px-4 md:px-6">
+          <span className="min-w-6 min-h-6">
             <img src={purpleBall} alt="" />
           </span>
           <p className=" text-[#596773]">
@@ -30,8 +30,8 @@ const LatestActivities = () => {
             <span className="text-[#7A8A98]"> applied for leave.</span>
           </p>
         </div>
-        <div className="flex gap-6 h-12 md:h-16 items-center border border-[#E2E6E9] rounded bg-white px-4 md:px-6">
-          <span className="">
+        <div className="flex gap-6 py-[16px] lg-[24px] items-center border border-[#E2E6E9] rounded bg-white px-4 md:px-6">
+          <span className="min-w-6 min-h-6">
             <img src={yellowBall} alt="" />
           </span>
           <p className=" text-[#596773]">
@@ -40,8 +40,8 @@ const LatestActivities = () => {
             Client (Aslam Dhikrullahi)
           </p>
         </div>
-        <div className="flex gap-6 h-12 md:h-16 items-center border border-[#E2E6E9] rounded bg-white px-4 md:px-6">
-          <span className="">
+        <div className="flex gap-6 py-[16px] lg-[24px] items-center border border-[#E2E6E9] rounded bg-white px-4 md:px-6">
+          <span className="min-w-6 min-h-6">
             <img src={redBall} alt="" />
           </span>
           <p className=" text-[#596773]">
@@ -50,8 +50,8 @@ const LatestActivities = () => {
             <span className="text-[#7A8A98]"> to the inventory. </span>
           </p>
         </div>
-        <div className="flex gap-6 h-12 md:h-16 items-center border border-[#E2E6E9] rounded bg-white px-4 md:px-6">
-          <span className="">
+        <div className="flex gap-6 py-[16px] lg-[24px] items-center border border-[#E2E6E9] rounded bg-white px-4 md:px-6">
+          <span className="min-w-6 min-h-6">
             <img src={blueBall} alt="" />
           </span>
           <p className=" text-[#596773]">
@@ -63,8 +63,8 @@ const LatestActivities = () => {
             Aslam Dhikrullahi
           </p>
         </div>
-        <div className="flex gap-6 h-12 md:h-16 items-center border border-[#E2E6E9] rounded bg-white px-4 md:px-6">
-          <span className="">
+        <div className="flex gap-6 py-[16px] lg-[24px] items-center border border-[#E2E6E9] rounded bg-white px-4 md:px-6">
+          <span className="min-w-6 min-h-6">
             <img src={greenBall} alt="" />
           </span>
           <p className=" text-[#596773]">

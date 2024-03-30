@@ -3,14 +3,15 @@ import tradeUp from "../images/trade-up.png";
 import tradeDown from "../images/trade-down.png";
 import LatestActivities from "../latestActivities/LatestActivities";
 import Employees from "../employees/Employees";
+import Contacts from "../contacts/Contacts";
 
 const Home = () => {
   return (
     <>
-      <div className="flex flex-col xl:flex-row gap-10">
+      <div className="flex flex-col xl:flex-row gap-x-10">
         <div className="col-1 ">
           {/* Overview secttion*/}
-          <div className=" md:flex gap-[24px]">
+          <div className="flex flex-wrap gap-[24px]">
             <div
               className="bg-[url('/revenue.png')] inline-flex"
               style={{
@@ -74,8 +75,9 @@ const Home = () => {
         </div>
 
         {/* col-2 */}
-        <div className="col-2 flex-1">
+        <div className="col-2 flex-1 flex flex-col gap-16">
           <Employees />
+          <Contacts />
         </div>
       </div>
     </>

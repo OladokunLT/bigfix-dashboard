@@ -1,6 +1,6 @@
 import React from "react";
 
-const CardOverview = ({ revenue, amount, month, icon }) => {
+const CardOverview = ({ revenue, amount, month = "March", icon }) => {
   return (
     <>
       <div className="p-8 inline-flex flex-col gap-[24px] rounded">
