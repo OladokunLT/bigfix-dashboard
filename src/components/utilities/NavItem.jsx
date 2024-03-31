@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { PropTypes } from "prop-types";
 
 const NavItem = ({ name, url, icon }) => {
   return (
@@ -18,6 +19,12 @@ const NavItem = ({ name, url, icon }) => {
       </NavLink>
     </>
   );
+};
+
+NavItem.propTypes = {
+  name: PropTypes.string,
+  icon: PropTypes.string,
+  url: PropTypes.string,
 };
 
 export default NavItem;
