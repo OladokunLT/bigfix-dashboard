@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { PropTypes } from "prop-types";
 
-const NavItem = ({ name, url, icon }) => {
+const NavItem = ({ name, url, icon, bool }) => {
   return (
     <>
       <NavLink
@@ -15,7 +15,7 @@ const NavItem = ({ name, url, icon }) => {
         <span className="min-w-6 min-h-6">
           <img src={icon} alt="" />
         </span>
-        <span>{name}</span>
+        <span className={`duration-200 ${!bool && "scale-0"}`}>{name}</span>
       </NavLink>
     </>
   );
@@ -25,6 +25,7 @@ NavItem.propTypes = {
   name: PropTypes.string,
   icon: PropTypes.string,
   url: PropTypes.string,
+  bool: PropTypes.boolean,
 };
 
 export default NavItem;

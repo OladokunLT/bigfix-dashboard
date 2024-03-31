@@ -35,28 +35,58 @@ const Sidebar = () => {
 
         <ul className="w-full text-[#B3B3B3] font-medium relative">
           <li>
-            <NavItem icon={dashboardIcon} name="Dashboard" url="" />
+            <NavItem icon={dashboardIcon} name="Dashboard" url="" bool={open} />
           </li>
           <li>
-            <NavItem icon={calculatorIcon} name="Books" url="/books" />
+            <NavItem
+              icon={calculatorIcon}
+              name="Books"
+              url="/books"
+              bool={open}
+            />
           </li>
           <li>
-            <NavItem icon={packageSentIcon} name="Sell" url="/sell" />
+            <NavItem
+              icon={packageSentIcon}
+              name="Sell"
+              url="/sell"
+              bool={open}
+            />
           </li>
           <li>
-            <NavItem icon={packageIcon} name="Source" url="/source" />
+            <NavItem
+              icon={packageIcon}
+              name="Source"
+              url="/source"
+              bool={open}
+            />
           </li>
           <li>
-            <NavItem icon={storeIcon} name="Stock" url="/stock" />
+            <NavItem icon={storeIcon} name="Stock" url="/stock" bool={open} />
           </li>
           <li>
-            <NavItem icon={userGroupIcon} name="Talent" url="/Talent" />
+            <NavItem
+              icon={userGroupIcon}
+              name="Talent"
+              url="/Talent"
+              bool={open}
+            />
           </li>
           <li>
-            <NavItem icon={contactIcon} name="Contacts" url="/contacts" />
+            <NavItem
+              icon={contactIcon}
+              name="Contacts"
+              url="/contacts"
+              bool={open}
+            />
           </li>
           <li className="absolute bottom-10 w-full">
-            <NavItem icon={settingsIcon} name="Settings" url="/settings" />
+            <NavItem
+              icon={settingsIcon}
+              name="Settings"
+              url="/settings"
+              bool={open}
+            />
           </li>
         </ul>
       </nav>
