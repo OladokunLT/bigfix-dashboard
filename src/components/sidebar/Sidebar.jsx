@@ -18,7 +18,7 @@ const Sidebar = () => {
     <>
       <nav
         className={`min-h-screen flex relative pt-[152px] duration-300 ${
-          open ? "min-w-[240px]" : "w-[72px]"
+          open ? "min-w-[240px]" : "w-[60px] sm:w-[72px]"
         }`}
         style={{
           background: "linear-gradient(180deg, #09285D 0%, #020A17 100%)",
@@ -27,7 +27,7 @@ const Sidebar = () => {
         <div
           onClick={() => setOpen(!open)}
           className={`min-h-6 min-w-6 cursor-pointer fixed z-10 left-[180px] top-10 ${
-            !open && "rotate-180 left-[40px] top-[100px]"
+            !open && "rotate-180 left-[16px] top-[100px]"
           }`}
         >
           <img src={arrowLeft} alt="" />

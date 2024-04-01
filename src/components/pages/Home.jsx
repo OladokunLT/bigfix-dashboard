@@ -11,7 +11,7 @@ const Home = () => {
       <div className="flex flex-col xl:flex-row gap-x-10 pb-10">
         <div className="col-1 ">
           {/* Overview secttion*/}
-          <div className="flex flex-wrap gap-[24px]">
+          <section className="flex flex-wrap gap-[24px]">
             <div
               className="bg-[url('/revenue.png')] inline-flex"
               style={{
@@ -68,9 +68,9 @@ const Home = () => {
                 month="March  10%"
               />
             </div>
-          </div>
+          </section>
 
-          {/* Latest reviews */}
+          {/* Latest activities */}
           <LatestActivities />
         </div>
 

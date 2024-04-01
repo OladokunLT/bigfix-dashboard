@@ -6,8 +6,8 @@ import UserCard from "../utilities/UserCard";
 
 const Employees = () => {
   return (
-    <div className="">
-      <div className="flex flex-col gap-6">
+    <>
+      <section className="flex flex-col gap-6">
         {/* Heading */}
         <div className="inline-flex gap-4 items-center self-start ">
           <h2 className="font-medium text-[#1A1A1A] leading-[19.41px] ">
@@ -23,8 +23,8 @@ const Employees = () => {
         <UserCard avatar={avatar3} name="Aslam Dhikrullahi" role="Admin" />
         <UserCard avatar={avatar1} name="Aslam Dhikrullahi" role="Admin" />
         <UserCard avatar={avatar2} name="Aslam Dhikrullahi" role="Admin" />
-      </div>
-    </div>
+      </section>
+    </>
   );
 };
 

@@ -8,8 +8,8 @@ const NavItem = ({ name, url, icon, bool }) => {
         to={url}
         className={({ isActive }) =>
           isActive
-            ? "bg-[#3B7CED] text-white border-l-2  border-white pl-10 py-4 flex gap-4"
-            : "pl-10 py-4 flex gap-4"
+            ? "bg-[#3B7CED] text-white border-l-2  border-white pl-4 sm:pl-10 py-4 flex gap-2"
+            : "pl-4 sm:pl-10 py-4 flex gap-4"
         }
       >
         <span className="min-w-6 min-h-6">
