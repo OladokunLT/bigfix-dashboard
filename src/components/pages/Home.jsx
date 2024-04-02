@@ -11,7 +11,10 @@ const Home = () => {
       <div className="flex flex-col xl:flex-row gap-x-10 pb-10">
         <div className="col-1 ">
           {/* Overview secttion*/}
-          <section className="flex flex-wrap gap-[24px]">
+          <section className="flex flex-wrap gap-[24px] relative">
+            <h2 className="text-[24px] sm:text-[32px] absolute -mt-[125px]">
+              Overview
+            </h2>
             <div
               className="bg-[url('/revenue.png')] inline-flex"
               style={{
