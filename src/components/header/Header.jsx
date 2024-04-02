@@ -9,9 +9,12 @@ const Header = () => {
           <img className="[w-97.42px] h-[32px]" src={logo} alt="" />
         </Link>
         <h2 className="text-[32px] absolute left-[235px]">Overview</h2>
-        <div className="h-10 flex items-center gap-4 cursor-pointer">
+        <div
+          className="h-10 flex items-center gap-4 cursor-pointer"
+          title="Change user"
+        >
           <img className="w-10 h-10" src={avatar} alt="current user avatar" />
-          <span className="text-[#31A1A1A] text-xl font-medium">
+          <span className="text-[#31A1A1A] text-xl font-medium hidden sm:flex">
             Administrator
           </span>
         </div>

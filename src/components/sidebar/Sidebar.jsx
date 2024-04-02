@@ -18,7 +18,7 @@ const Sidebar = () => {
     <>
       <nav
         className={`min-h-screen flex relative pt-[152px] duration-300 ${
-          open ? "min-w-[240px]" : "w-[60px] sm:w-[72px]"
+          open ? "min-w-[240px]" : "w-[50px] sm:w-[72px]"
         }`}
         style={{
           background: "linear-gradient(180deg, #09285D 0%, #020A17 100%)",
@@ -26,16 +26,25 @@ const Sidebar = () => {
       >
         <div
           onClick={() => setOpen(!open)}
-          className={`min-h-6 min-w-6 cursor-pointer fixed z-10 left-[180px] top-10 ${
-            !open && "rotate-180 left-[16px] top-[100px]"
+          className={`min-h-6 min-w-6 cursor-pointer fixed z-10 top-10 ${
+            open
+              ? "left-[180px]"
+              : "rotate-180 left-[16px] sm:left-10 top-[100px]"
           }`}
+          title="Open or close navbar"
         >
           <img src={arrowLeft} alt="" />
         </div>
 
         <ul className="w-full text-[#B3B3B3] font-medium relative">
           <li>
-            <NavItem icon={dashboardIcon} name="Dashboard" url="" bool={open} />
+            <NavItem
+              icon={dashboardIcon}
+              name="Dashboard"
+              url=""
+              bool={open}
+              tooltip="Dashboard"
+            />
           </li>
           <li>
             <NavItem
@@ -43,6 +52,7 @@ const Sidebar = () => {
               name="Books"
               url="/books"
               bool={open}
+              tooltip="Books"
             />
           </li>
           <li>
@@ -51,6 +61,7 @@ const Sidebar = () => {
               name="Sell"
               url="/sell"
               bool={open}
+              tooltip="Sell"
             />
           </li>
           <li>
@@ -59,17 +70,25 @@ const Sidebar = () => {
               name="Source"
               url="/source"
               bool={open}
+              tooltip="Source"
             />
           </li>
           <li>
-            <NavItem icon={storeIcon} name="Stock" url="/stock" bool={open} />
+            <NavItem
+              icon={storeIcon}
+              name="Stock"
+              url="/stock"
+              bool={open}
+              tooltip="Stock"
+            />
           </li>
           <li>
             <NavItem
               icon={userGroupIcon}
               name="Talent"
-              url="/Talent"
+              url="/talent"
               bool={open}
+              tooltip="Talent"
             />
           </li>
           <li>
@@ -78,6 +97,7 @@ const Sidebar = () => {
               name="Contacts"
               url="/contacts"
               bool={open}
+              tooltip="Contacts"
             />
           </li>
           <li className="absolute bottom-10 w-full">
@@ -86,6 +106,7 @@ const Sidebar = () => {
               name="Settings"
               url="/settings"
               bool={open}
+              tooltip="Settings"
             />
           </li>
         </ul>
