@@ -4,7 +4,7 @@ import logo from "../../components/images/logo.png";
 const Header = () => {
   return (
     <>
-      <header className="flex justify-between items-center pt-10 mb-20 fixed right-4 left-4 sm:right-10 sm:left-10 max-w-[1440px] mx-auto">
+      <header className="flex justify-between items-center pt-10 mb-20 fixed right-4 left-4 sm:right-10 sm:left-10 2xl:px-10 max-w-[1440px] mx-auto">
         <Link to="/">
           <img className="[w-97.42px] h-[32px]" src={logo} alt="" />
         </Link>

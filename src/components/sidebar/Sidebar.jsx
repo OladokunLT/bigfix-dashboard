@@ -12,21 +12,19 @@ import { useState } from "react";
 
 const Sidebar = () => {
   const [open, setOpen] = useState(true);
-  console.log(open);
 
   return (
     <>
       <nav
-        className={`min-h-screen flex relative pt-[152px] duration-300 ${
-          open ? "min-w-[240px]" : "w-[50px] sm:w-[72px]"
-        }`}
+        className={`min-h-screen flex relative pt-[152px] 
+         duration-300 ${open ? "min-w-[240px]" : "w-[50px] sm:w-[72px]"}`}
         style={{
           background: "linear-gradient(180deg, #09285D 0%, #020A17 100%)",
         }}
       >
         <div
           onClick={() => setOpen(!open)}
-          className={`min-h-6 min-w-6 cursor-pointer fixed z-10 top-10 ${
+          className={`min-h-6 min-w-6 cursor-pointer absolute z-10 top-10 ${
             open
               ? "left-[180px]"
               : "rotate-180 left-[16px] sm:left-10 top-[100px]"
